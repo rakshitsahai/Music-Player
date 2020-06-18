@@ -1,0 +1,459 @@
+html{
+    font-size: 20px;
+}
+body
+{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.margin-bottom-80px{
+    margin-bottom: 80px;
+}
+
+aside{
+    width: 30%;
+}
+
+section{
+    width: 95%;
+}
+
+.sectionheading h4{
+    margin: 0px;
+}
+
+.sectionheading{
+    margin: 10px;
+    margin-left: 0px;
+}
+.mainClass{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    width: 85%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-selected{
+    background-color: black;
+}
+
+.selectedSinger{
+    display: flex;
+    width: 100%;
+}
+
+.selectedSingerImageClasss{
+    width: 40%;
+}
+.singerImage{
+    width: 100%;
+    height: 100%;
+}
+
+.singerDetails{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-top: 0px;
+    padding: 0px 30px;
+}
+
+.singerDetailsHead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.singerName h3{
+    margin: 0px;
+    font-weight: 500;
+}
+
+.singerName h5{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 0.7em;
+    color: lightgray;
+}
+
+.followers h5{
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 0.6em;
+    color: lightgray;
+} 
+
+.moreDetails p{
+    margin: 0px;
+    margin-top: 10px;
+    font-weight: 100;
+    font-size: 0.6em;
+    color: lightgray;
+}
+
+.singerAbout{
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.primary-singerplay-button-container{
+    width: 40%;
+}
+
+.primary-singerbtn{
+    width: 80%;
+    padding: 5px;
+    background: linear-gradient(to right,blue,purple);
+    border: 0px;
+    color: white;
+    font-size: 0.7em;
+}
+
+.primary-singerbtn + p{
+    width: 80%;
+    text-align: center;
+    font-size: 0.6em;
+}
+.color-selected-song{
+    background-color: black;
+}
+
+.selectedSingerSongList{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectedSong{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    transition: all 0.5s ease-in;
+}
+
+.selectedSong:hover{
+    transform: scaleY(1.05);
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.singerSongImageClass{
+    width: 5%;
+    margin-left: 20px;
+    padding-top: 5px;
+    
+}
+
+.songImage{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 6px 1px slategray;
+}
+
+.songDetailss{
+    margin-left: 20px;
+}
+
+.songDetailss p{
+    margin: 5px;
+    color: slategray;
+    font-size: 0.7em;
+}
+
+.songDetailss h4{
+    font-weight: 500;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+.fav-icon-pop-art{
+    margin-left: auto;
+}
+
+.fav-icon-pop-art i{
+    color: slategray;
+    font-size: 0.8em;
+    margin: 0px 20px;
+}
+
+.num{
+    color: slategray;
+    margin-left: 10px;
+    font-size: 0.6em;
+}
+
+.similarSingers{
+    width: 100%;
+}
+
+.singerClass{
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.singer{
+    padding-top: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.singerClass a{
+    color: inherit; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.singerHead{
+    text-align: center;
+}
+
+.singer:hover{
+
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.singerImageClass{
+    width: 100%;
+}
+
+.singerimage{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.singerimage:hover{
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+.singername{
+    text-align: center;
+    margin: auto;
+}
+
+.singername h5{
+    font-size: 0.7em;
+    font-weight: 300;
+    margin: 0px;
+}
+.queue-section{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.queue-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.queue-flap{
+    position: relative;
+    color: white;
+    font-size: medium;
+}
+
+.queue-flap-body{
+    opacity: 0.7;
+    max-width: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 10%;
+    color: black;
+    background-color:white;
+}
+
+.queue-flap-body div{
+    padding: 10px;
+}
+
+.queue-flap:hover .queue-flap-body{
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.songList{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.num{
+    font-size: 0.7em;
+    color: slategray;
+}
+
+.fav-icon{
+    margin-left: auto;
+    color: slategray;
+    font-size: 0.9em;
+}
+
+.playing{
+    font-size: 0.8em;
+    color: white;
+}
+.playBar{
+    z-index: 5;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: black;
+}
+
+.footer-container{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playing-song{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.playing-song-img-container{
+    width: 25%;
+    margin-right: 10px;
+}
+
+.playing-song-img{
+    min-width: 45px;
+    width: 100%;
+}
+
+.playing-song-details{
+    margin-right: 20px;
+}
+
+.playing-song-details h4{
+    margin: 0px;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.playing-song-details p{
+    margin: 0px;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: slategray;
+}
+
+.fav-icon-bar{
+    display: flex;
+    justify-items: space-between;
+}
+
+.fav-icon-bar i{
+    margin: 2px;
+    font-size: 0.8em;
+    color: slategray;
+}
+
+.control{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fButton{
+    width: 100%;
+    padding-top: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iconSize{
+    font-size: 0.8em;
+}
+
+#play{
+    font-size: 1.1em;
+}
+
+#pause{
+    font-size: 1.1em;
+    display: none;
+}
+
+#play-pause{
+    display: none;
+}
+
+#play-pause:checked + label #play{
+    display: none;
+}
+#play-pause:checked + label #pause{
+    display: block;
+}
+
+.progress{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress input[type="range"]{
+    width: 80%;
+}
+
+.vControl{
+    width: 50%;
+}
+
+.progress p{
+    color: slategray;
+    font-size: 0.8em;
+}
+
+.sound{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

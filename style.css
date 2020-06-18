@@ -1,0 +1,821 @@
+html{
+    font-size: 20px;
+}
+
+body
+{
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 0px;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.margin-bottom-80px{
+    margin-bottom: 80px;
+}
+
+section{
+    width: 95%;
+}
+
+.sectionHeading h4{
+    margin: 0px;
+}
+
+.sectionHeading{
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#nav
+{
+    align-items: center;
+    padding: 10px;
+    padding-right: 0px;
+    display: flex;
+    width: 100%;
+    z-index: 20;
+    background-color: black;
+    position: fixed;
+    top: -20px;
+    right: 0px;
+    left: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+#menuButton{
+    display: none;
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.navDiv{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menuDrop{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: all 0.5s ease-in-out;
+    margin-right: 5px;
+    overflow: hidden;
+    max-height: 0px;
+}
+
+.labelMenu{
+    margin-right: 10px;
+}
+
+#menuCheckBox{
+    display: none;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+#logoImage{
+    border-radius: 50%;
+    width: 120px;
+    height: 100px;
+}
+
+#logoName{
+    margin-left: 10px ;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+#fav{
+    margin-left: 30px;
+    font-weight: 100;
+}
+
+#search{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+#searchDiv{
+    position: relative;
+    background-color: rgb(17, 25, 63);
+    padding: 5px;
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+}
+
+#searchBar{
+    margin-left: 8px;
+    outline: none;
+    background-color: rgb(17, 25, 63);
+    width: 90%;
+    border: 0px;
+    color: white;
+    font-size: 0.8em;
+    height: 100%;
+}
+
+#search-btn{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    margin-left: auto;
+    font-size: 1.1em;
+}
+
+.notify{ 
+    font-size: 1.3em;
+    color: white;
+}
+
+#profile{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 200px;
+    width: 85%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    margin-bottom: 40px;
+    display: flex;
+    width: 95%;
+    position: relative;
+}
+
+.imgPosition{
+    width: 30%;
+    height: 30;
+}
+
+.imgSize{
+    width: 100%;
+    height: 200px;
+}
+
+.img1{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: all 0.4s ease-in-out;
+}
+
+.img1:hover{
+    box-shadow: 0px 0px 10px 10px black;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.img2{
+    box-shadow: 0px 0px 10px 10px black;
+    transform: scale(1.1);
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 1px;
+}
+
+.img2:hover{
+    transform: scale(1.2);   
+}
+
+.img3{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transition: all 0.4s ease-in-out;
+}
+
+.img3:hover{
+    box-shadow: 0px 0px 10px 10px black;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.img3:hover ~ .img2{
+    box-shadow: 0px 0px 0px 0px black;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transform: scale(1);
+}
+
+.img1:hover ~ .img2{
+    box-shadow: 0px 0px 0px 0px black;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    transform: scale(1);
+}
+
+.latestSongs{
+    width: 100%;
+}
+
+.latestSongsDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.latestSongsReleased{
+    margin-right: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    padding-left: 0px;
+    width: 45%;
+}
+
+.latestImage{
+    width: 100%;
+    height: 100%;
+}
+
+.latestSongsImage{
+    width: 30%;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.latestSongsImage i{
+    position: absolute;
+    display: none;
+}
+
+.latestSongsImage:hover img{
+    opacity: 0.5;
+}
+
+.latestSongsImage:hover i{
+    display: inline-block;
+}
+
+.util{
+    position: relative;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.songDetails{
+    margin-left: 20px;
+}
+
+.songDetails h5{
+    margin: 15px;
+    margin-top: 0px;
+    font-weight: 500;
+    font-style: 0.8em;
+}
+.songDetails p{
+    font-weight: 100;
+    font-size: 0.6em;
+    margin: 15px;
+    color: slategray;
+}
+
+.util span{
+    margin-left: 4px;
+    font-size: 0.9em;
+}
+
+
+.utilPlay:hover .flap{
+    min-width: 180px;
+    max-width: 300px;
+    z-index: 2;
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+
+
+.flap{
+    opacity: 0.8;
+    max-width: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    right: 0px;
+    background-color: white;
+    color: black;
+}
+
+.flap a{
+    font-size: 0.8em;
+    display: block;
+    margin: 2px;
+    padding: 2px;
+}
+
+.util p{
+    font-size: 0.6em;
+    color: slategray;
+}
+
+.singerDiv{
+    box-sizing: border-box;
+    background-color: black;
+    padding: 20px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.singer{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.singerDiv a{
+    color: inherit; 
+    text-decoration: none;
+    text-align: center;
+}
+
+.singer:hover{
+
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.singerImgDiv{
+    width: 100%;
+    height: 150px;
+}
+
+.singerimg{
+    width: 100%;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.singerimg:hover{
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+.singerName{
+    text-align: center;
+    margin: auto;
+}
+
+.singerName h5{
+    font-size: 0.7em;
+    font-weight: 300;
+    margin: 0px;
+}
+
+.genre{
+    margin-top: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(17, 25, 63);
+}
+
+.gLogo{
+    padding: 15px;
+    width: 13%;
+    height: auto;
+}
+
+.gImg{
+    width: 100%;
+    height: auto;
+}
+
+.gContainer{
+    width: 9%;
+}
+
+.gContainer:hover img{
+    box-shadow: 0px 0px 10px 5px black;
+}
+
+.gLogoImage{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.gLogoImage-name
+{
+    margin: 0px;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+.moreGenree{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.moreGTypes{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+.moreGImage{
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.moreGTypes:hover .moreGImage{
+    transform: translateZ(100px);
+}
+
+.moreGTypes p{
+    margin: 0px;
+    text-shadow: 0px 5px 5px black;
+    align-self: center;
+    font-weight: 500;
+    position: absolute;
+}
+
+.engDiv{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.songs{
+    width: 15%;
+}
+
+.songsImageClass{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.songsImageClass i{
+    display: none;
+    position: absolute;
+}
+
+.songsImageClass:hover{
+    opacity: 0.5;
+}
+
+.songsImageClass:hover i{
+    display: inline-block;
+}
+
+.songsImage{
+    width: 100%;
+    height: 150px;
+    border-radius: 10%;
+}
+
+.songDetail h5{
+    margin: 0px;
+    font-size: 0.65em;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+.songDetail p{
+    margin: 0px;
+    font-size: 0.6em;
+    color: slategray;
+}
+
+.queue{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.queueHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.qClass{
+    position: relative;
+    color: antiquewhite;
+    font-size: medium;
+    margin-right: 10px;
+}
+
+.qBody{
+    opacity: 0.7;
+    max-width: 0px;
+    overflow: hidden;
+    position: absolute;
+    right: 10%;
+    color: black;
+    background-color:white;
+}
+
+.qBody div{
+    padding: 10px;
+}
+
+.qClass:hover .qBody{
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.songList{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.qSong{
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+
+.qImgBox{
+    margin-left: 30px;
+    width: 13%;
+    box-shadow: 0px 0px 10px 1px grey;
+}
+
+.qImage{
+    width: 100%;
+}
+
+.qSongDetail{
+    margin-left: 30px;
+    align-self: flex-start;
+}
+
+.qSongDetail p{
+    margin: 5px;
+    color: slategray;
+    font-size: 0.7em;
+}
+
+.qSongDetail h4{
+    font-weight: 500;
+    font-size: 0.8em;
+    margin: 5px;
+}
+
+.num{
+    font-size: 0.7em;
+    color: slategray;
+}
+
+.fav-icon{
+    margin-left: auto;
+    color: slategray;
+    font-size: 0.9em;
+}
+
+.playingNum{
+    font-size: 0.8em;
+    color: blue;
+}
+
+/* Footer play bar */
+
+.playBar{
+    z-index: 5;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: rgb(40, 40, 40);
+}
+
+.footer{
+    margin: auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playing{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.playingImg{
+    width: 25%;
+    margin-right: 10px;
+}
+
+.playingImage{
+    min-width: 45px;
+    width: 100%;
+    height: 60px;
+}
+
+.playingDetails{
+    margin-right: 20px;
+}
+
+.playingDetails h4{
+    margin: 0px;
+    font-weight: 200;
+    font-size: 0.9em;
+}
+
+.playingDetails p{
+    margin: 0px;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: slategray;
+}
+
+.fav-icon-bar{
+    display: flex;
+    justify-items: space-between;
+}
+
+.fav-icon-bar i{
+    margin: 2px;
+    font-size: 0.8em;
+    color: slategray;
+}
+
+.controls{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fButton{
+    width: 100%;
+    padding-top: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iconSize{
+    font-size: 0.8em;
+}
+
+#play{
+    font-size: 1.1em;
+}
+
+#pause{
+    font-size: 1.1em;
+    display: none;
+}
+
+#play-pause{
+    display: none;
+}
+
+#play-pause:checked + label #play{
+    display: none;
+}
+#play-pause:checked + label #pause{
+    display: block;
+}
+
+.progress{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress input[type="range"]{
+    width: 80%;
+}
+
+.vControl{
+    width: 50%;
+}
+
+.progress p{
+    color: slategray;
+    font-size: 0.8em;
+}
+
+.sound{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qBottom{
+    transition: all 0.5s ease-in-out;
+    max-height: 0px;
+    overflow: hidden;
+    justify-content: flex-start;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.qBottom .songList{
+    width: 100%;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.qBottom .qSong{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 90%;
+}
+
+.qBottom .qImgBox{
+    width: 5%;
+    margin-left: 0px;
+}
+
+.playing-icon{
+    color: blue;
+}
+
+.nowPlaying{
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px 1px white;
+}
+
+#qCheckBox{
+    display: none;
+}
+
+
+.qOpen{
+    font-size: 0.9em;
+    margin-left: 5px;
+    color:wheat;
+    display: none;
+}
