@@ -181,7 +181,7 @@ section{
 
 .imgPosition{
     width: 30%;
-    height: 30;
+    height: 30%;
 }
 
 .imgSize{
@@ -245,7 +245,7 @@ section{
     transform: scale(1);
 }
 
-.latestSongs{
+.latestReleases{
     width: 100%;
 }
 
@@ -332,13 +332,13 @@ section{
 
 
 .flap{
-    opacity: 0.8;
+    opacity: 0.6;
     max-width: 0px;
     overflow: hidden;
     position: absolute;
     top: 30%;
     right: 0px;
-    background-color: white;
+    background-color: lightgrey;
     color: black;
 }
 
